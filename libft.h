@@ -93,4 +93,21 @@ int					ft_sqrt(int nb);
 char				*ft_base16_encoder(char *s);
 char				*ft_base16_decoder(char *s);
 long long int		ft_pow(int nb, int p);
+
+
+typedef struct s_stek
+{
+    int val;
+    struct s_stek *next;
+} t_stek;
+
+t_stek *ft_node_new(int value);
+void	ft_node_add(t_stek **top, t_stek *new);
+int ft_stek_size(t_stek *top);
+void    ft_stekswap(t_stek **top);
+void  ft_stekpush(t_stek **src, t_stek **dst);
+void    ft_stek_rot(t_stek **top);
+void    ft_stek_revrot(t_stek **top);
+void ft_print_stek(t_stek **top, char name);
+
 #endif

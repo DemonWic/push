@@ -138,7 +138,7 @@ void ft_print_stek(t_stek **top, char name)
     printf("%i %c %i\n", i, name, buf->val);
     printf("---------------------------------\n\n\n");
 }
-
+/*
 int main()
 {
 
@@ -313,4 +313,4 @@ int main()
     ft_print_stek(&top_a, 'A');
     // ft_stek_revrot(&top_b);
     return (0);
-}
+}*/
